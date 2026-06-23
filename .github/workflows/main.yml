@@ -12,7 +12,7 @@ jobs:
       - name: print mem infro
         run: lsmem
 
-    -
+    
       
         
           
