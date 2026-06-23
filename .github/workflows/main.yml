@@ -11,6 +11,8 @@ jobs:
         run: lscpu
       - name: print mem infro
         run: lsmem
+      - name: print valume
+        run: lsblk
 
     
       
