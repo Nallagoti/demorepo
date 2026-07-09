@@ -15,13 +15,13 @@ jobs:
           node-version: '24'
           
       - name: Install Dependencies
-        run: npm run install
+        run: npm install
           
       - name: Build
-        run: npm run build
+        run: npm build
         
       - name: test
-        run: npm run test
+        run: npm test
         
       - name: Artifact upload
         uses: actions/upload-artifact@v7
