@@ -8,14 +8,21 @@ jobs:
     steps: 
       - name:  Checkout Code
         uses:  actions/checkout@v7
+        
       - name: Set up Nodejs
         uses: actions/setup-node@v6
         with:
           node-version: '24'
+          
+      - name: Install Dependencies
+        run: npm run install
+          
       - name: Build
-        run: npm install
+        run: npm run build
+        
       - name: test
-        run: npm test
+        run: npm run test
+        
       - name: Artifact upload
         uses: actions/upload-artifact@v7
         with:
