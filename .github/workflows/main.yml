@@ -17,10 +17,10 @@ jobs:
           node-version: '24'
 
       - name: Build
-        run: npm install
+        run: mvn install
 
       - name: test
-        run: npm test
+        run: mvn test
         
       - name: Artifact upload
         uses: actions/upload-artifact@v7
